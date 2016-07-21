@@ -1,8 +1,12 @@
+*.iml
+.slcache
 *.iws
 *Db.properties
 *Db.script
 .settings
 stacktrace.log
+groovyblog.iml
+groovyblog-grailsPlugins.iml
 /*.zip
 /plugin.xml
 /*.log

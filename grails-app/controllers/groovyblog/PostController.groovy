@@ -21,7 +21,8 @@ class PostController {
     }
 
     def view = {
-        render(view:'view', model:[post:Post.get(params.id)])
+        def post = Post.get(params.id)
+        render(view:'view', model:[post:post])
     }
 
     def save = {

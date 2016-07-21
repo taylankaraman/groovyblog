@@ -1,3 +1,5 @@
+import groovyblog.PostController
+
 class UrlMappings {
 
 	static mappings = {
@@ -7,7 +9,13 @@ class UrlMappings {
 			}
 		}
 
-		"/"(view:"/index")
+//		"/"(view:"/index")
+
+		"/"
+			{
+				controller = "Post"
+			}
+
 		"500"(view:'/error')
 	}
 }
