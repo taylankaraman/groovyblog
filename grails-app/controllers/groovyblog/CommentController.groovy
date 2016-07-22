@@ -6,13 +6,14 @@ class CommentController {
         render(view:'edit',
                 model:[
                         comment:new Comment(),
-                        postId:params.id])
+                        postId:params.id,
+                dog:"monkey"])
     }
 
     def save = {
         def comment = new Comment(params)
         comment.dateCreated = new Date();
-        comment.post = Post.get(params.id)
+        comment.post = Post.get(params.postId)
         if(comment.save()) {
             redirect(
                     controller:'post',
