@@ -4,6 +4,19 @@ class PostController {
 
     static defaultAction = 'list'
 
+
+    def beforeInterceptor = [action:this.&checkUser,except: ['list','view']]
+
+    def checkUser() {
+        if(!session.user) {
+            // i.e. user not logged in
+            redirect(controller:'user',action:'login')
+            return false
+        }
+    }
+
+
+
     def edit = {
         def post = Post.get(params.id)
         if(!post) {

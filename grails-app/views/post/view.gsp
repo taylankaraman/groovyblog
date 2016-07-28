@@ -20,7 +20,12 @@
         <g:link controller="comment" action="edit" id="${post.id}">
             Add a comment
         </g:link>
+    </div>
 
+    <div>
+        <g:link controller="post" action="list">
+            Go back to my posts page
+        </g:link>
     </div>
 
     </body>

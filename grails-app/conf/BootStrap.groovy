@@ -1,8 +1,11 @@
 import groovyblog.Post
+import groovyblog.User
 
 class BootStrap {
 
     def init = { servletContext ->
+
+        new User(email:"t@t.com",password:"123").save()
 
         new Post(title:"First Grails Project",
                 teaser:"Clearing out the clutter",
@@ -18,3 +21,4 @@ class BootStrap {
     def destroy = {
     }
 }
+

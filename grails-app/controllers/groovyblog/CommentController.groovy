@@ -6,8 +6,7 @@ class CommentController {
         render(view:'edit',
                 model:[
                         comment:new Comment(),
-                        postId:params.id,
-                dog:"monkey"])
+                        postId:params.id])
     }
 
     def save = {
