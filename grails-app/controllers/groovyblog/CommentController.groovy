@@ -17,11 +17,11 @@ class CommentController {
             redirect(
                     controller:'post',
                     action:'view',
-                    id:params.id)
+                    id:params.postId)
         } else {
             render(view:'edit',
                     model:[comment:comment,
-                           postId:params.id])
+                           id:params.postId])
         }
     }
 }
