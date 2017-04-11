@@ -18,4 +18,5 @@ class Post {
         lastUpdated(nullable: true)
         published(nullable: false)
     }
+
 }

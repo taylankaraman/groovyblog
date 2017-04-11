@@ -6,7 +6,7 @@ class Comment implements Comparable {
 
     Post post
     String comment
-    Commentor who = new Commentor()
+    Commenter who = new Commenter()
     Date dateCreated
 
     public int compareTo(Object o) {

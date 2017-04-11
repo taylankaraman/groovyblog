@@ -7,8 +7,8 @@ import grails.test.mixin.*
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(Commentor)
-class CommentorTests {
+@TestFor(Commenter)
+class CommenterTests {
 
     void testSomething() {
        fail "Implement me"

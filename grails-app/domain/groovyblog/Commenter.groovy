@@ -1,6 +1,6 @@
 package groovyblog
 
-class Commentor {
+class Commenter {
 
     static belongsTo = Comment
 

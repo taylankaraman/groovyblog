@@ -15,8 +15,6 @@ class PostController {
         }
     }
 
-
-
     def edit = {
         def post = Post.get(params.id)
         if(!post) {
